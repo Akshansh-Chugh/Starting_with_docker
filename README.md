@@ -8,7 +8,7 @@ Welcome to **Starting_with_docker**! This repository serves as a beginner-friend
 Ensure you have the following installed on your system:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose (optional)](https://docs.docker.com/compose/install/)
-- [VS Code] (https://code.visualstudio.com/download)
+- [VS Code](https://code.visualstudio.com/download)
 
 ### Installation
 Follow the official Docker installation guide based on your OS:
