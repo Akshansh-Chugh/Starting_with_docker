@@ -14,20 +14,20 @@ docker run -it --name container1 ubuntu:22.04
 ```
 
 3️⃣ Inside the container, update package lists:
-![Step 3](images/step3.png)
+![Step 3](././images/step3.png)
 ```bash
 apt-get update
 ```
 
 4️⃣ Install OpenSSH Server and Nano editor:
-![Step 4](images/step4.png)
+![Step 4](./images/step4.png)
 ```bash
 apt-get install openssh-server -y
 apt-get install nano -y
 ```
 
 5️⃣ Edit SSH configuration:
-![Step 5](images/step5.png)
+![Step 5](./images/step5.png)
 ```bash
 nano /etc/ssh/sshd_config
 ```
@@ -38,7 +38,7 @@ PermitRootLogin yes
 Save and exit.
 
 6️⃣ Start SSH service:
-![Step 6](images/step6.png)
+![Step 6](./images/step6.png)
 ```bash
 service ssh start
 ```
@@ -50,13 +50,13 @@ passwd
 Enter a new password when prompted.
 
 8️⃣ Open a new terminal and install OpenSSH Client:
-![Step 8](images/step8.png)
+![Step 8](./images/step8.png)
 ```bash
 apt-get install openssh-client -y
 ```
 
 9️⃣ Find the IP address of container1:
-![Step 9](images/step9.png)
+![Step 9](./images/step9.png)
 - **Windows:**
 ```powershell
 docker inspect container1 |Select-String "IPAddress"
@@ -69,7 +69,7 @@ Copy the IP address.
 
 🔟 Connect from container2 to container1 using SSH:
 ```bash
-![Step 10](images/step10.png)
+![Step 10](./images/step10.png)
 ssh [IP address of container1]
 ```
 
