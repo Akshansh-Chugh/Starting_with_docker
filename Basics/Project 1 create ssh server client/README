@@ -23,7 +23,7 @@ apt-get update
 ![Step 4](images/step4.png)
 ```bash
 apt-get install openssh-server -y
-apt-get install nano
+apt-get install nano -y
 ```
 
 5️⃣ Edit SSH configuration:
@@ -52,7 +52,7 @@ Enter a new password when prompted.
 8️⃣ Open a new terminal and install OpenSSH Client:
 ![Step 8](images/step8.png)
 ```bash
-apt-get install openssh-client
+apt-get install openssh-client -y
 ```
 
 9️⃣ Find the IP address of container1:
