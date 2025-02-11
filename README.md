@@ -8,10 +8,17 @@ Welcome to **Starting_with_docker**! This repository serves as a beginner-friend
 Ensure you have the following installed on your system:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose (optional)](https://docs.docker.com/compose/install/)
+- [VS Code] (https://code.visualstudio.com/download)
 
 ### Installation
 Follow the official Docker installation guide based on your OS:
-- **Windows / macOS**: Install Docker Desktop
+- **Windows**:
+  ```bash
+   winget install Docker.DockerDesktop
+   winget install --id Microsoft.VisualStudioCode
+  ```
+  
+
 - **Linux**: Install Docker Engine via package manager
 
 ## 📌 Topics Covered
@@ -27,7 +34,7 @@ Follow the official Docker installation guide based on your OS:
 ## 🔧 Usage
 Clone this repository to start exploring Docker:
 ```bash
-git clone https://github.com/your-username/Starting_with_docker.git
+git clone https://github.com/Akshansh-Chugh/Starting_with_docker.git
 cd Starting_with_docker
 ```
 
