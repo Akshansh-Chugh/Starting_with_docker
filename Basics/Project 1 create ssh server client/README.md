@@ -72,10 +72,11 @@ Copy the IP address.
 
 👏 Connect from container2 to container1 using SSH:
 ```bash
-![Step 10](./images/step10.png)
 ssh [IP address of container1]
 ```
+Enter password of 1st container 
 
+🎉🎉 you have successfully ssh in container 1
 ## 📷 Step-by-Step Images
 Images for each step can be found in the `images/` directory.
 
