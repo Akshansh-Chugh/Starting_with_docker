@@ -6,27 +6,27 @@ This project demonstrates how to set up an SSH server and client using Docker co
 ## 🚀 Getting Started
 ### Steps to Set Up SSH Server
 
-1️⃣ Run Docker Desktop.
+1⃣ Run Docker Desktop.
 
-2️⃣ Open a terminal and run the following command to create and start a new Ubuntu container:
+2⃣ Open a terminal and run the following command to create and start a new Ubuntu container:
 ```bash
 docker run -it --name container1 ubuntu:22.04
 ```
 
-3️⃣ Inside the container, update package lists:
-![Step 3](././images/step3.png)
+3⃣ Inside the container, update package lists:
+![Step 3](./images/step3.png)
 ```bash
 apt-get update
 ```
 
-4️⃣ Install OpenSSH Server and Nano editor:
+4⃣ Install OpenSSH Server and Nano editor:
 ![Step 4](./images/step4.png)
 ```bash
 apt-get install openssh-server -y
 apt-get install nano -y
 ```
 
-5️⃣ Edit SSH configuration:
+5⃣ Edit SSH configuration:
 ![Step 5](./images/step5.png)
 ```bash
 nano /etc/ssh/sshd_config
@@ -37,25 +37,25 @@ PermitRootLogin yes
 ```
 Save and exit.
 
-6️⃣ Start SSH service:
+6⃣ Start SSH service:
 ![Step 6](./images/step6.png)
 ```bash
 service ssh start
 ```
 
-7️⃣ Set a password for root user:
+7⃣ Set a password for root user:
 ```bash
 passwd
 ```
 Enter a new password when prompted.
 
-8️⃣ Open a new terminal and install OpenSSH Client:
+8⃣ Open a new terminal and install OpenSSH Client:
 ![Step 8](./images/step8.png)
 ```bash
 apt-get install openssh-client -y
 ```
 
-9️⃣ Find the IP address of container1:
+9⃣ Find the IP address of container1:
 ![Step 9](./images/step9.png)
 - **Windows:**
 ```powershell
@@ -67,7 +67,7 @@ docker inspect container1 |grep IPAddress
 ```
 Copy the IP address.
 
-🔟 Connect from container2 to container1 using SSH:
+👏 Connect from container2 to container1 using SSH:
 ```bash
 ![Step 10](./images/step10.png)
 ssh [IP address of container1]
@@ -76,7 +76,7 @@ ssh [IP address of container1]
 ## 📷 Step-by-Step Images
 Images for each step can be found in the `images/` directory.
 
-## 🛑 Stopping & Removing Containers
+## 🛡️ Stopping & Removing Containers
 ```bash
 docker stop container1 && docker rm container1
 ```
@@ -84,7 +84,8 @@ docker stop container1 && docker rm container1
 ## 🤝 Contributing
 Feel free to open issues or submit pull requests to enhance the project!
 
-## 📜 License
+## 💜 License
 This project is licensed under the [MIT License](../../LICENSE).
 
 Happy Dockering! 🐳
+
